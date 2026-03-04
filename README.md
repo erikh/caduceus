@@ -1,4 +1,4 @@
-# caduceus
+# caduceus-term
 
 Terminal proxy library with WASM-based I/O stream transformation.
 
@@ -33,8 +33,8 @@ Optional host imports (in the `"env"` namespace):
 ## Usage
 
 ```rust
-use caduceus::proxy::run_proxy;
-use caduceus::{ChildMode, ProxyBuilder, WasmModuleSource};
+use caduceus_term::proxy::run_proxy;
+use caduceus_term::{ChildMode, ProxyBuilder, WasmModuleSource};
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {

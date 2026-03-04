@@ -8,8 +8,8 @@
 //! # Quick start
 //!
 //! ```no_run
-//! use caduceus::proxy::run_proxy;
-//! use caduceus::{ChildMode, ProxyBuilder, WasmModuleSource};
+//! use caduceus_term::proxy::run_proxy;
+//! use caduceus_term::{ChildMode, ProxyBuilder, WasmModuleSource};
 //!
 //! #[tokio::main]
 //! async fn main() -> Result<(), Box<dyn std::error::Error>> {

@@ -1,6 +1,6 @@
-use caduceus::child::SpawnConfig;
-use caduceus::queue::{IoQueue, IoQueueHandles, QueueHandle};
-use caduceus::wasm::WasmTransform;
+use caduceus_term::child::SpawnConfig;
+use caduceus_term::queue::{IoQueue, IoQueueHandles, QueueHandle};
+use caduceus_term::wasm::WasmTransform;
 use std::collections::HashMap;
 use tokio::io::{duplex, AsyncReadExt, AsyncWriteExt};
 
@@ -62,7 +62,7 @@ const UPPERCASE_WAT: &str = r#"
 "#;
 
 fn make_test_queue() -> (
-    tokio::task::JoinHandle<caduceus::error::Result<()>>,
+    tokio::task::JoinHandle<caduceus_term::error::Result<()>>,
     QueueHandle,
     // Readable ends for verification
     tokio::io::DuplexStream, // child_stdin readable end
@@ -140,7 +140,7 @@ async fn test_queue_write_and_read_round_trip() {
 
 #[tokio::test]
 async fn test_piped_child_echo() {
-    use caduceus::child::piped::spawn_piped;
+    use caduceus_term::child::piped::spawn_piped;
 
     let config = SpawnConfig {
         program: "echo".into(),

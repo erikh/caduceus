@@ -1,5 +1,5 @@
-use caduceus::proxy::{run_proxy, ChildMode, WasmModuleSource};
-use caduceus::ProxyBuilder;
+use caduceus_term::proxy::{run_proxy, ChildMode, WasmModuleSource};
+use caduceus_term::ProxyBuilder;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {

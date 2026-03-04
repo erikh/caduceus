@@ -1,11 +1,11 @@
 [package]
-name = "caduceus"
+name = "caduceus-term"
 version = "0.1.0"
 edition = "2021"
 description = "Terminal proxy with WASM-based I/O stream transformation"
 license = "MIT"
-repository = "https://github.com/erikh/caduceus"
-homepage = "https://github.com/erikh/caduceus"
+repository = "https://github.com/erikh/caduceus-term"
+homepage = "https://github.com/erikh/caduceus-term"
 keywords = ["terminal", "proxy", "wasm", "pty", "transform"]
 categories = ["command-line-utilities", "wasm"]
 readme = "README.md"
