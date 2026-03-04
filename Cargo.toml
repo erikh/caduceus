@@ -4,6 +4,11 @@ version = "0.1.0"
 edition = "2021"
 description = "Terminal proxy with WASM-based I/O stream transformation"
 license = "MIT"
+repository = "https://github.com/erikh/caduceus"
+homepage = "https://github.com/erikh/caduceus"
+keywords = ["terminal", "proxy", "wasm", "pty", "transform"]
+categories = ["command-line-utilities", "wasm"]
+readme = "README.md"
 
 [dependencies]
 tokio = { version = "1", features = ["full"] }
